@@ -68,3 +68,21 @@
 > Create .gitignore file and write (`node_modules`) to skip this folder to upload
 > git add . (to add all files to the staging area)
 > git status (optional - just to make sure the list of files that are in staging are correct)
+> git commit -m "Init commit" (to commit the changes)
+
+> Create a new repo on GitHub (with any name)
+> Click create and go to "…or push an existing repository from the command line" and execute the commands
+```
+git remote add origin https://github.com/kaushalnavneet/chat-app.git
+git branch -M main
+git push -u origin main
+```
+> Refresh the GitHub repo page (https://github.com/kaushalnavneet/chat-app) and it should have all the latest changes
+
+> Sign up / Login to Heroku
+> Install heroku cli (installed it using brew)
+> heroku login
+> heroku create chat-app-nav (any name)
+> git push heroku main
+
+git rm -f --cached client && git add . && git commit -m 'Add client folder back to git repo' && git push heroku main
